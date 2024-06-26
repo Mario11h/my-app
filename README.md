@@ -1,46 +1,111 @@
-# Getting Started with Create React App
+Introduction
+This guide provides a step-by-step introduction on how to run the provided code locally. The code consists of a React application using Material-UI components to create a user interface with features such as filtering, pagination, and user management.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prerequisites
+Before running the code locally, ensure you have the following installed:
 
-## Available Scripts
+Node.js
+npm
+Getting Started
+Clone the Repository
 
-In the project directory, you can run:
+Clone the repository containing the code to your local machine. Open a terminal and run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+git clone <repository-url>
+cd <repository-directory>
+Install Dependencies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Navigate to the project directory and install the required dependencies using npm:
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
+Run the Application
 
-### `npm run build`
+Start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm start
+This will run the app in the development mode. Open http://localhost:3000 to view it in the browser. The page will reload if you make edits, and you will see any lint errors in the console.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Project Structure
+The project structure is as follows:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+my-app/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Filter.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Pagination.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── UserCard.tsx
+│   │   ├── UserTable.tsx
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── ...
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
+Key Files and Directories
+src/: Contains the source code for the React application.
+components/: Contains reusable React components.
+App.tsx: The main application component.
+index.tsx: The entry point of the application.
+public/: Contains public assets such as index.html.
+Available Scripts
+In the project directory, you can run the following scripts:
 
-### `npm run eject`
+npm start: Runs the app in development mode.
+npm test: Launches the test runner in interactive watch mode.
+npm run build: Builds the app for production.
+npm run eject: Ejects the project from Create React App configuration.
+Running Tests
+To run the tests, use the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm test
+This will launch the test runner in interactive watch mode.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Building for Production
+To create a production build of the app, run:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm run build
+This will build the app for production to the build folder, correctly bundling React in production mode and optimizing the build for best performance. The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Additional Information
+For more information about Create React App, refer to the Create React App documentation.
+
+To learn more about React, check out the React documentation.
+
+Dependencies
+The project uses the following dependencies:
+
+@emotion/react
+@emotion/styled
+@mui/icons-material
+@mui/material
+@testing-library/jest-dom
+@testing-library/react
+@testing-library/user-event
+@types/jest
+@types/node
+@types/react
+@types/react-dom
+axios
+date-fns
+react
+react-dom
+react-icons
+react-scripts
+typescript
+use-debounce
+web-vitals
+Conclusion
+This guide should help you get started with running and developing the provided React application locally. If you encounter any issues or have any questions, please refer to the documentation for the respective tools and libraries used in the project.
